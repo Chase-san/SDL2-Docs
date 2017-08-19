@@ -25,8 +25,8 @@ int SDL_Init(Uint32 flags)
 <div style="codearea">
 <pre>
 #include "SDL.h"
-#include <stdio.h> /* for fprintf() */
-#include <stdlib.h> /* for atexit() */
+#include &lt;stdio.h&gt; /* for fprintf() */
+#include &lt;stdlib.h&gt; /* for atexit() */
 int main(int argv, char** argc)  {
     if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_TIMER) != 0) {
         fprintf(stderr, 
@@ -45,8 +45,8 @@ int main(int argv, char** argc)  {
 <h3>C++</h3>
 <div style="codearea">
 <pre>
-#include <exception>
-#include <string>
+#include &lt;exception&gt;
+#include &lt;string&gt;
 #include "SDL.h"
 class InitError: public std::exception {
     public:
@@ -78,7 +78,7 @@ SDL::~SDL() {
     SDL_Quit();
 }
 /* ... */
-#include <iostream>
+#include &lt;iostream&gt;
 int main(int argc, char **argv) {
     try {
         SDL sdl(SDL_INIT_VIDEO|SDL_INIT_TIMER);
